@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>HELLO</pattern>
+    <pattern>HI</pattern>
+    <template>Hello. This is the career advisor bot for the Computer Science department. I am here to help!
+    <br></br>Please choose an option below.
+        <button> 
+        <text>Five career options for computer science students and graduates.</text>
+        <postback>options</postback>
+        </button>
+        <button>
+            <text>Help choose a career option.</text>
+            <postback>question01</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>options</pattern>
+      <template>Here is a list of five career options for computer science majors. Click any job title to learn more.
+        <button>
+            <text>Front End Developer</text>
+            <postback>front end</postback>
+        </button>
+        <button>
+            <text>Back End Developer</text>
+            <postback>back end</postback>
+        </button>
+        <button>
+            <text>Database Administrator</text>
+            <postback>dba</postback>
+        </button>
+        <button>
+            <text>Network Engineer</text>
+            <postback>network</postback>
+        </button>
+        <button>
+            <text>Full Stack Developer</text>
+            <postback>full stack</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>front end</pattern>
+      <template>
+      Front End Developer<br></br>
+      Responsible for a website’s user-facing code and the architecture of its immersive user experiences. Languages such as HTML, CSS and JavaScript will be necessary for this role.
+      <button>
+          <text>Return to career options</text>
+          <postback>options</postback>
+      </button>
+      <button>
+          <text>Career Questionnaire</text>
+          <postback>question01</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>back end</pattern>
+      <template>
+      Back End Developer<br></br>
+      The back end of a website consists of a server, an application, and a database. A back end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place. Knowledge of a server side langauge such as python, java and SQL will be necessary. An understanding of front end langauges will also be helpful.
+      <button>
+          <text>Return to career options</text>
+          <postback>options</postback>
+      </button>
+      <button>
+          <text>Career Questionnaire</text>
+          <postback>question01</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>dba</pattern>
+      <template>
+      Database Administrator<br></br>
+      Responsible for the performance, integrity and security of a database. The position is responsible for the planning and development of the database, as well as in troubleshooting any issues on behalf of the users. Knowledge of SQL will also be required.      
+      <button>
+          <text>Return to career options</text>
+          <postback>options</postback>
+      </button>
+      <button>
+          <text>Career Questionnaire</text>
+          <postback>question01</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>network</pattern>
+      <template>
+      Network Engineer<br></br> 
+      Responsible for implementing, administering, and troubleshooting network devices including WAPs, firewalls, routers, switches, and controllers. A deep knowledge of application transport and network infrastructure protocols is highly desired. Also need to have a strong understanding of network infrastructure and network hardware. 
+      <button>
+          <text>Return to career options</text>
+          <postback>options</postback>
+      </button>
+      <button>
+          <text>Career Questionnaire</text>
+          <postback>question01</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>full stack</pattern>
+      <template>
+      Full Stack Developer<br></br> 
+      Responsible for working, like back end devs, on the server side of web programming, but they can also fluently speak the front end languages that control how content looks on a site’s user-facing side. Front end languages such as HTML, CSS and JavaScript may be used as well as server side langauges including but not limited to python, java and SQL.
+      <button>
+          <text>Return to career options</text>
+          <postback>options</postback>
+      </button>
+      <button>
+          <text>Career Questionnaire</text>
+          <postback>question01</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>question01</pattern>
+      <template>
+          In order to help find you a new career option, please answer the following:
+          <br></br>
+          Which of these subjects interest you the most? Choose an answer and I will make a recommendation.
+          <button>
+              <text>How a website or app looks</text>
+              <postback>front end</postback>
+          </button>
+          <button>
+              <text>How a website or app uses information</text>
+              <postback>back end</postback>
+          </button>
+          <button>
+              <text>Designing databases</text>
+              <postback>dba</postback>
+          </button>
+          <button>
+              <text>Networks</text>
+              <postback>network</postback>
+          </button>
+          <button>
+              <text>Everything about websites and apps</text>
+              <postback>full stack</postback>
+          </button>
+      </template>
+  </category>
+  
+  
+  
+  
+  
+</aiml>
